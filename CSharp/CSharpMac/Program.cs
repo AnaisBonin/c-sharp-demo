@@ -1,20 +1,23 @@
 ﻿using System;
 
-namespace ConsoleApp
+namespace CSharpMac
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // Afficher un message de bienvenue
-            Console.WriteLine("Bienvenue dans notre application console!");
+            // private / local variables must be named with _
+            int _legalAge = 18;
 
-            // Lire le nom de l'utilisateur
-            Console.Write("Veuillez entrer votre nom: ");
-            string userName = Console.ReadLine();
+            UserInteraction userInteraction = new UserInteraction();
+
+            // Afficher un message de bienvenue
+            userInteraction.WelcomeUser();
+
+            userInteraction.GetUserName();
 
             // Saluer l'utilisateur
-            Console.WriteLine($"Bonjour, {userName}!");
+            userInteraction.WelcomeName();
 
             // Lire l'âge de l'utilisateur
             Console.Write("Veuillez entrer votre âge: ");
@@ -25,7 +28,7 @@ namespace ConsoleApp
             }
 
             // Afficher un message selon l'âge
-            if (userAge < 18)
+            if (userAge < _legalAge)
             {
                 Console.WriteLine("Vous êtes mineur.");
             }

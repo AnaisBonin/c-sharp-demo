@@ -6,31 +6,32 @@ namespace CSharpMac
     {
         static void Main(string[] args)
         {
-            UserService userService = new();
+            UserService UserService = new();
 
             // Class UserEntity
-            UserEntity user1 = new();
+            UserEntity User1 = new();
 
             // Struct User
-            User user2;
+            User User2;
 
-            string[] seatsAvailable = { "A2", "B4", "C2" };
+            // privates variable
+            string[] _seatsAvailable = { "A2", "B4", "C2" };
 
             // Appeler une méthode static d'une classe static : l'appeler via la Classe directement. On n'instancie jamais une classe static.
             UserInteraction.WelcomeUsers();
 
-            user1.UserName = UserInteraction.ObtainUserName();
-            UserInteraction.WelcomeUserWithName(user1.UserName);
+            User1.UserName = UserInteraction.ObtainUserName();
+            UserInteraction.WelcomeUserWithName(User1.UserName);
 
-            user2.name = UserInteraction.ObtainUserName();
-            UserInteraction.WelcomeUserWithName(user2.name);
+            User2.Name = UserInteraction.ObtainUserName();
+            UserInteraction.WelcomeUserWithName(User2.Name);
 
-            user1.UserAge = UserInteraction.ObtainUserAge();
+            User1.UserAge = UserInteraction.ObtainUserAge();
 
             // Static methods + use of userService methode
-            UserInteraction.PrintUserStatus(userService.DefineUserStatus(user1.UserAge ?? 18));
+            UserInteraction.PrintUserStatus(UserService.DefineUserStatus(User1.UserAge ?? 18));
 
-            Console.WriteLine(user2.name + " you can take seat number " + seatsAvailable[0]);
+            Console.WriteLine(User2.Name + " you can take seat number " + _seatsAvailable[0]);
             UserInteraction.EndProgram();
         }
     }

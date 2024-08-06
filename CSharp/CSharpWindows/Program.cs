@@ -19,7 +19,7 @@ namespace CSharpWindows
                 switch (choice)
                 {
                     case "1":
-                        WeatherService weatherService = new WeatherService();
+                        IWeatherAPIService weatherService = new WeatherAPIService();
                         var weatherData = weatherService.GetWeatherData();
 
                         foreach (var data in weatherData)

@@ -10,9 +10,9 @@ namespace CSharpWindows
 
             while (!exit)
             {
-                Console.WriteLine("Please choose an option:");
-                Console.WriteLine("1. Check weather API");
-                Console.WriteLine("2. End terminal");
+                Console.WriteLine("The options :");
+                Console.WriteLine("1. Grenoble Weather API");
+                Console.WriteLine("2. Exit");
 
                 var choice = Console.ReadLine();
 
@@ -24,7 +24,9 @@ namespace CSharpWindows
 
                         foreach (var data in weatherData)
                         {
-                            Console.WriteLine($"Time: {data.Time}, Temperature at 2m: {data.TemperatureC:F2}°C");
+                            Console.WriteLine($"Time : {data.Time}");
+                            Console.WriteLine($"Temperature : {data.TemperatureC:F2}°C");
+                            Console.WriteLine();
                         }
 
                         break;
@@ -34,7 +36,7 @@ namespace CSharpWindows
                         break;
 
                     default:
-                        Console.WriteLine("Invalid choice. Please choose 1 or 2.");
+                        Console.WriteLine("1 or 2");
                         break;
                 }
             }

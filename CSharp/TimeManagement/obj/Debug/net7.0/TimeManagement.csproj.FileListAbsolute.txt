@@ -1,0 +1,15 @@
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/bin/Debug/net7.0/TimeManagement
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/bin/Debug/net7.0/TimeManagement.deps.json
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/bin/Debug/net7.0/TimeManagement.runtimeconfig.json
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/bin/Debug/net7.0/TimeManagement.dll
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/bin/Debug/net7.0/TimeManagement.pdb
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.csproj.AssemblyReference.cache
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.GeneratedMSBuildEditorConfig.editorconfig
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.AssemblyInfoInputs.cache
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.AssemblyInfo.cs
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.csproj.CoreCompileInputs.cache
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.dll
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/refint/TimeManagement.dll
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.pdb
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/TimeManagement.genruntimeconfig.cache
+/Users/AnaisBonin/Documents/Etudes/projects/c-sharp-demo/CSharp/TimeManagement/obj/Debug/net7.0/ref/TimeManagement.dll

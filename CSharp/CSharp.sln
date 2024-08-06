@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpMac", "CSharpMac\CSha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpMacTests", "CSharpMacTests\CSharpMacTests.csproj", "{EDCD1F40-B1A5-4434-A7A4-A15398F75CCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement", "TimeManagement\TimeManagement.csproj", "{D0117910-3CD2-4128-980D-1C4C9350B4E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EDCD1F40-B1A5-4434-A7A4-A15398F75CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDCD1F40-B1A5-4434-A7A4-A15398F75CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDCD1F40-B1A5-4434-A7A4-A15398F75CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0117910-3CD2-4128-980D-1C4C9350B4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0117910-3CD2-4128-980D-1C4C9350B4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0117910-3CD2-4128-980D-1C4C9350B4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0117910-3CD2-4128-980D-1C4C9350B4E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

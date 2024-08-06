@@ -6,40 +6,32 @@ namespace CSharpMac
     {
         static void Main(string[] args)
         {
-            // private / local variables must be named with _
-            int _legalAge = 18;
+            UserService userService = new();
 
-            UserInteraction userInteraction = new UserInteraction();
+            // Class UserEntity
+            UserEntity user1 = new();
 
-            // Afficher un message de bienvenue
-            userInteraction.WelcomeUser();
+            // Struct User
+            User user2;
 
-            userInteraction.GetUserName();
+            string[] seatsAvailable = { "A2", "B4", "C2" };
 
-            // Saluer l'utilisateur
-            userInteraction.WelcomeName();
+            // Appeler une méthode static d'une classe static : l'appeler via la Classe directement. On n'instancie jamais une classe static.
+            UserInteraction.WelcomeUsers();
 
-            // Lire l'âge de l'utilisateur
-            Console.Write("Veuillez entrer votre âge: ");
-            int userAge;
-            while (!int.TryParse(Console.ReadLine(), out userAge))
-            {
-                Console.Write("Veuillez entrer un âge valide: ");
-            }
+            user1.UserName = UserInteraction.ObtainUserName();
+            UserInteraction.WelcomeUserWithName(user1.UserName);
 
-            // Afficher un message selon l'âge
-            if (userAge < _legalAge)
-            {
-                Console.WriteLine("Vous êtes mineur.");
-            }
-            else
-            {
-                Console.WriteLine("Vous êtes majeur.");
-            }
+            user2.name = UserInteraction.ObtainUserName();
+            UserInteraction.WelcomeUserWithName(user2.name);
 
-            // Fin du programme
-            Console.WriteLine("Appuyez sur une touche pour terminer...");
-            Console.ReadKey();
+            user1.UserAge = UserInteraction.ObtainUserAge();
+
+            // Static methods + use of userService methode
+            UserInteraction.PrintUserStatus(userService.DefineUserStatus(user1.UserAge ?? 18));
+
+            Console.WriteLine(user2.name + " you can take seat number " + seatsAvailable[0]);
+            UserInteraction.EndProgram();
         }
     }
 }
